@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+
+.class_name_line_though {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+.regular_styles {
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_container {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.form_and_item_container {
+  background-color: lightgray;
+  padding: 40px;
+  width: 25%;
+  border-radius: 10px;
+  height: 50%;
+}
+
+.all_items_container{
+  overflow: auto;
+  height: 95%;
+  margin-top: 10px;
+}
+
+.input_style {
+  width: 70%;
+  padding: 6px;
+  border: 0px;
+  border-radius: 6px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+button {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.submit_button {
+  background-color: darkmagenta;
   color: white;
+  padding: 10px;
+  width: 24%;
+  border-radius: 8px;
+  border: 0px;
+}
+.submit_button:hover {
+  background-color: green;
 }
 
-.App-link {
-  color: #61dafb;
+.todo_item_container {
+  background-color: lightsteelblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete_button_styles {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 6px;
+  border-radius: 5px;
+  margin-left: 5px;
 }
+.mark_as_done_button_styles {
+  background-color: greenyellow;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
